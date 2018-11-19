@@ -1,0 +1,6 @@
+{
+    "require": {
+        "silverstripe/postgresql": "^2.1",
+        "vlucas/phpdotenv": "^2.5"
+    }
+}
