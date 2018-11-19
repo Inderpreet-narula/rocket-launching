@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 
 require_once(__DIR__.'/vendor/autoload.php');
 
-if(getenv('ENV')!='local')
+if(getenv('ENV')!='staging')
 {
 	$dotenv = new Dotenv\Dotenv(__DIR__);
 	$dotenv->load();
