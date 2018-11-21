@@ -27,7 +27,7 @@ $fetch_results = pg_query($database_connection, "SELECT visits from visits;");
 while ($row = pg_fetch_row($fetch_results)) {
     if(count($row))
     {
-        echo 'Hello! You are visitor number <b>'.$row[0].'</b>!';
+        echo 'Welcome! You are visitor number <b>'.$row[0].'</b>!';
     }
     else
     {
