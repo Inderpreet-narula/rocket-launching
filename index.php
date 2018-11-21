@@ -1,7 +1,6 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-//testing comment
 require_once(__DIR__.'/vendor/autoload.php');
 
 if(getenv('ENV')!='staging')
@@ -28,7 +27,7 @@ $fetch_results = pg_query($database_connection, "SELECT visits from visits;");
 while ($row = pg_fetch_row($fetch_results)) {
     if(count($row))
     {
-        echo 'You are visitor number <b>'.$row[0].'</b>!';
+        echo 'Hello! You are visitor number <b>'.$row[0].'</b>!';
     }
     else
     {
